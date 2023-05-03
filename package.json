@@ -1,25 +1,21 @@
 {
-  "name": "cinema-ui",
-  "version": "0.0.1",
+  "name": "cinema-ui-belohvostov",
+  "version": "0.0.4",
   "description": "ui-lib",
   "author": "Alex",
   "license": "MIT",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
-  "dependencies": {
-    "@rollup/plugin-commonjs": "^24.1.0",
-    "@rollup/plugin-node-resolve": "^15.0.2",
-    "@rollup/plugin-typescript": "^11.1.0",
-    "@types/react": "^18.2.0",
-    "react": "^18.2.0",
-    "rollup": "^3.21.3",
-    "rollup-plugin-dts": "^5.3.0",
-    "tslib": "^2.5.0",
-    "typescript": "^5.0.4"
-  },
+  "dependencies": {},
   "peerDependencies": {
+    "i18next": "*",
+    "i18next-browser-languagedetector": "*",
+    "i18next-http-backend": "*",
     "react": "*",
+    "react-i18next": "*",
     "tslib": "*"
   },
   "main": "dist/cjs/index.js",
@@ -27,5 +23,48 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BelohvostovAlex/train-ui.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.5",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.21.5",
+    "@rollup/plugin-alias": "^5.0.0",
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-image": "^3.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-typescript": "^11.1.0",
+    "@storybook/addon-actions": "^7.0.7",
+    "@storybook/addon-essentials": "^7.0.7",
+    "@storybook/addon-interactions": "^7.0.7",
+    "@storybook/addon-links": "^7.0.7",
+    "@storybook/addon-styling": "^1.0.5",
+    "@storybook/react": "^7.0.7",
+    "@storybook/react-webpack5": "7.0.7",
+    "@storybook/testing-library": "^0.1.0",
+    "@svgr/rollup": "^7.0.0",
+    "@svgr/webpack": "^7.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.1",
+    "@types/styled-components": "^5.1.26",
+    "babel-loader": "^8.3.0",
+    "i18next": "^22.4.15",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "i18next-http-backend": "^2.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^12.2.2",
+    "react-router-dom": "^6.11.0",
+    "rollup": "^3.21.3",
+    "rollup-plugin-dts": "^5.3.0",
+    "storybook": "7.0.7",
+    "styled-components": "^5.3.10",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4",
+    "url-loader": "^4.1.1"
+  }
 }
