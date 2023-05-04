@@ -15,6 +15,7 @@ export default {
 
 const Template: StoryFn<typeof Button> = (args) => <Button {...args}></Button>;
 
+/**Github button with branded colors and icon */
 export const githubButton = Template.bind({});
 githubButton.args = {
   typography: TypographyVariant.inter_sb,

@@ -12,5 +12,6 @@ const Template: StoryFn<typeof Divider> = (args) => (
   <Divider {...args}></Divider>
 );
 
+/**Divider: you can divide the sections, blocks using divider comp. It accepts background color, dimensions */
 export const Default = Template.bind({});
 Default.args = {};

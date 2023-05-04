@@ -14,6 +14,7 @@ export default {
 
 const Template: StoryFn<typeof Review> = (args) => <Review {...args}></Review>;
 
+/**Review: for displaying the review author, text. Text has limit number of chars, so you have the button to expand the review text and hide it */
 export const Default = Template.bind({});
 Default.args = {
   author: from,

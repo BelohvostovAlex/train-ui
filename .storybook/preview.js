@@ -2,7 +2,7 @@ import { withThemeFromJSXProvider } from "@storybook/addon-styling";
 import { ThemeProvider } from "styled-components";
 
 import { withI18next } from "./i18nDecorator";
-import { BrowserRouterecorator } from "./browserRouterDecorator";
+import { BrowserRouterDecorator } from "./browserRouterDecorator";
 import globalStyles from "../src/styles/global";
 import { mergeThemes } from "../src/styles/theme/config/index";
 import darkTheme from "../src/styles/theme/dark";
@@ -32,8 +32,8 @@ export const decorators = [
     Provider: ThemeProvider,
     GlobalStyles: globalStyles,
   }),
+  BrowserRouterDecorator,
   withI18next,
-  BrowserRouterecorator,
 ];
 
 export const globalTypes = {

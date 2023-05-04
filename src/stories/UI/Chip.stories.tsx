@@ -10,6 +10,7 @@ export default {
 
 const Template: StoryFn<typeof Chip> = (args) => <Chip {...args}></Chip>;
 
+/**Chip: for displaying tags. */
 export const Default = Template.bind({});
 Default.args = {
   text: "chip example",

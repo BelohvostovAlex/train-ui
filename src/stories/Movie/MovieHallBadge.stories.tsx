@@ -27,5 +27,6 @@ const Template: StoryFn<typeof MovieHallBadge> = (args) => {
   return <MovieHallBadge {...args} onClick={onClick}></MovieHallBadge>;
 };
 
+/**Movie Hall Badge: for displaying the info of the movie session(time, hall number, available seats for the session) */
 export const Default = Template.bind({});
 Default.args = {};

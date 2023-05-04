@@ -13,6 +13,7 @@ const Template: StoryFn<typeof RoundButton> = (args) => (
   <RoundButton {...args}></RoundButton>
 );
 
+/**Round button with any icon inside */
 export const defaultButton = Template.bind({});
 defaultButton.args = {
   children: <CloseSvg />,

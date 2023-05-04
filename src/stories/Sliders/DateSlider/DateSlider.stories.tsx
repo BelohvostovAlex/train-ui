@@ -14,6 +14,7 @@ export default {
   args: { direction: SliderDirectionVariant.VERTICAL },
 } as Meta<typeof Slider>;
 
+/**Date slider: for displaying the dates and month, that are available for booking tickets for the certain movie. You can use keyboard keys, mousewheel, and next/prev control buttons */
 const DateSliderTemplate: StoryFn<typeof Slider> = (args) => {
   const [state, setState] = useState<number>(0);
   const [{ direction }] = useArgs();

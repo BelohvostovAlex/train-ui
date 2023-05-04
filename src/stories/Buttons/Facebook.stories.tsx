@@ -15,6 +15,7 @@ export default {
 
 const Template: StoryFn<typeof Button> = (args) => <Button {...args}></Button>;
 
+/**Facebook button with branded colors and icon */
 export const facebookButton = Template.bind({});
 facebookButton.args = {
   typography: TypographyVariant.inter_sb,

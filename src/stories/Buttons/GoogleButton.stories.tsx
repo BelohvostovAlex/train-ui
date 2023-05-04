@@ -16,6 +16,7 @@ const Template: StoryFn<typeof GoogleButton> = (args) => (
   <GoogleButton {...args}></GoogleButton>
 );
 
+/**Google button with branded colors and icon */
 export const googleButton = Template.bind({});
 googleButton.args = {
   typography: TypographyVariant.inter_sb,

@@ -14,6 +14,7 @@ export default {
 
 const Template: StoryFn<typeof Button> = (args) => <Button {...args}></Button>;
 
+/** Primary Button for Cinema App. (choose dark background) */
 export const primary = Template.bind({});
 primary.args = {
   typography: TypographyVariant.poppins_l,
@@ -22,6 +23,7 @@ primary.args = {
   children: "Primary",
 };
 
+/** Primary Button for Cinema App */
 export const secondary = Template.bind({});
 secondary.args = {
   typography: TypographyVariant.poppins_l,

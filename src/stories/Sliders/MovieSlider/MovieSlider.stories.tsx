@@ -14,6 +14,7 @@ export default {
   args: { direction: SliderDirectionVariant.VERTICAL },
 } as Meta<typeof Slider>;
 
+/**Movie slider: for displaying the plots of the movies. You can use keyboard keys, mousewheel, and next/prev control buttons */
 const MovieSliderTemplate: StoryFn<typeof Slider> = (args) => {
   const [state, setState] = useState<number>(0);
   const [{ direction }] = useArgs();

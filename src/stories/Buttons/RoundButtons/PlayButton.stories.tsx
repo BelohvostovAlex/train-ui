@@ -13,6 +13,7 @@ const Template: StoryFn<typeof RoundButton> = (args) => (
   <RoundButton {...args}></RoundButton>
 );
 
+/**Round button with play icon inside, using for audio/video components */
 export const playButton = Template.bind({});
 playButton.args = {
   children: <PlaySvg />,
