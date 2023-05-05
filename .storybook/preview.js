@@ -8,6 +8,7 @@ import { mergeThemes } from "../src/styles/theme/config/index";
 import darkTheme from "../src/styles/theme/dark";
 import lightTheme from "../src/styles/theme/light";
 import { ThemeTypes } from "../src/constants/styles/theme";
+import { reduxDecorator } from "./reduxDecorator";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -34,6 +35,7 @@ export const decorators = [
   }),
   BrowserRouterDecorator,
   withI18next,
+  reduxDecorator,
 ];
 
 export const globalTypes = {
